@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*  */
+.hidden {
+  opacity: 0;
+}
+
+header,
+.result {
+  text-align: center;
+  padding-block: 40px;
+  font-size: 2rem;
+}
+
+.result__number {
+  font-size: 3rem;
+}
+
+.form {
+  background-color: rgb(0, 119, 255);
+  color: white;
+  font-size: 1.5rem;
+  padding: 40px;
+  height: 100vh;
+}
+.form__inner {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 30px 0;
+}
+label {
+  padding: 5px;
+  font-size: 1.2rem;
+  color: rgb(161, 161, 161);
+}
+input {
+  margin-right: 10px;
+}
+button {
+  width: fit-content;
+  margin: 0 auto;
+}
