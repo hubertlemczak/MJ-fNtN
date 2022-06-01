@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
     resultShow.classList.remove('hidden');
     let i = 0;
     const timer = setInterval(() => {
-      result.innerHTML = `${i}%`;
+      result.textContent = `${i}%`;
       i++;
       if (i === score + 1) clearInterval(timer);
     }, 10);
