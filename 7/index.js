@@ -13,9 +13,10 @@
 // ];
 
 // const products2 = products.map((product) => {
-//   if (product.price > 30) product = { name: '123', price: 33 / 2 };
-//   return product;
+//   if (product.price > 30) product = { name: '123', price: product.price * 2 };
+//   if (product.price < 30) product.price = { name: '123', price: product.price * 2 };
+//   return products;
 // });
 
-// console.log(products);
+// // console.log(products);
 // console.log(products2);
