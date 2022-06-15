@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*  */
+
+body {
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos {
+  background-color: red;
+  height: 100%;
+}
+
+.todo-container {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+
+.todos__inner {
+  padding: 50px;
+}
+
+#todoSearch {
+  width: 100%;
+  appearance: none;
+  border: red;
+  background-color: rgba(0, 0, 255, 0.446);
+}
+
+.todos__todo {
+  max-width: 20rem;
+}
