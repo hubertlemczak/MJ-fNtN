@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 * {
   margin: 0;
@@ -33,10 +35,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-#root,
-#__next {
-  isolation: isolate;
-}
 
 /*  */
 
@@ -66,8 +64,8 @@ body {
 }
 
 .todos {
-  background-color: red;
-  height: 100%;
+  background-color: rgb(52, 50, 92);
+  min-height: 100%;
 }
 
 .todo-container {
@@ -79,13 +77,27 @@ body {
   padding: 50px;
 }
 
-#todoSearch {
+.todos__search,
+.todos__add {
+  text-align: center;
+  margin-block: 40px;
+}
+
+#todoSearch,
+#todoAdd {
+  margin-block: 5px;
   width: 100%;
-  appearance: none;
-  border: red;
-  background-color: rgba(0, 0, 255, 0.446);
+  height: 2.5rem;
+  border: black 2px solid;
+  background-color: rgba(41, 40, 75);
+  outline: none;
 }
 
 .todos__todo {
+  padding: 20px;
+  font-size: 1.3rem;
+  height: 2.5rem;
   max-width: 20rem;
+  background-color: rgb(66, 62, 113);
+  margin-bottom: 5px;
 }
